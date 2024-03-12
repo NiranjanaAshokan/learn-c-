@@ -57,7 +57,7 @@ int main()
 
 	/* unset (clear) bit */
 	index = 4;
-	cout << "Unsetting (Clearing) - " << index << "-th bit" << endl;
+	cout << "Unsetting checking - " << index << "-th bit" << endl;
 	num = setBit(num, index, false);
 	for (int i = 7; i >= 0; i--)
 		cout << getBit(num,i) << " ";
