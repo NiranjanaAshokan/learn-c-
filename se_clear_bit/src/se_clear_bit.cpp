@@ -35,6 +35,10 @@ int setBit(int n, int index, bool b)
 		return n & mask;
 	}
 }
+int toggleBit(int n, int index)
+{
+    return (n ^ (1 << index));
+}
 
 int main()
 {
@@ -62,6 +66,14 @@ int main()
 	for (int i = 7; i >= 0; i--)
 		cout << getBit(num,i) << " ";
 	cout << endl;
+
+	//toggle a bit
+		index = 2;
+		cout << "Toggling  - " << index << "-th bit" << endl;
+		num = toggleBit(num, index);
+		for (int i = 7; i >= 0; i--)
+			cout << getBit(num,i) << " ";
+		cout << endl;
 
 	return 0;
 }
